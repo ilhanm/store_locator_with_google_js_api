@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    
+    <form id="newLocationForm" onsubmit="return false" style="margin-right: 35%; margin-left: 35%;">
+      <div class="form-group">
+        <label for="inputLocationID">ID</label>
+        <input type="name" class="form-control" id="inputLocationID" placeholder="Location ID">
+        <label for="inputLocationName">Location Name</label>
+        <input type="name" class="form-control" id="inputLocationName" placeholder="Enter Location Name">
+        
+      </div>
+      <div class="form-group">
+        <label for="inputLocations">Coordinates</label>
+        <input type="data" class="form-control" id="inputLocationX" placeholder="coord X">
+        <input type="data" class="form-control" id="inputLocationY" placeholder="coord Y">
+      </div>
+      <div class="inputs" style="justify-content: space-between;">
+      <input type="submit" id="addMarkerButton" value="Add Store">
+      <input type="submit" id="deleteMarkerButton"  value="Delete Selected Store">
+      <input type="submit" id="hideUnhideButton" value="Hide/Unhide Stores" style="float: right;">      
+    </div>
+    
+    </form>
+    
+    
+    
+
+
+  </body>
+</html>
