@@ -11,9 +11,7 @@
     initMap();
     //addMarkersToMap();
     addMarkersFromArr();
-    getClickedPointDetails();
-    deleteMarker(1);
-    deleteMarker(2);
+    getClickedPointDetails(); 
     buttonEvents();
     }
    { //Constants  
@@ -122,19 +120,8 @@
         markerEventsHandler(marker, locationName.value); 
         console.log(newLoc);
         console.log(locations[0])
-    }
-  
-  
-   function placeMarker(location) {
-           marker = new google.maps.Marker({
-           id: uniqueId(),
-           position: location, 
-           map: map,
-           icon: image
-       });
-       console.log(marker.id)
-       markers[marker.id] = marker;
-   }
+    }  
+
   
    function getClickedPointDetails(){
    google.maps.event.addListener(map, 'click', function(event) {
